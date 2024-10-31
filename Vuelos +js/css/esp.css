@@ -1,0 +1,70 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/esp/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card1{
+    background-image: url(../img/esp/plaza_madrid.webp);
+}
+.card2{
+    background-image: url(../img/esp/plaza_sevilla.jpeg);
+}
+.card3{
+    background-image: url(../img/esp/sagrada_barcelona.webp);
+}
+.card4{
+    background-image: url(../img/esp/puente_helva.jpg);
+}
+
+.flip-card1-front{
+    background-image: url(../img/esp/card1.jpg);
+}
+
+.flip-card2-front{
+    background-image: url(../img/esp/card2.jpg);
+}
+
+.flip-card3-front{
+    background-image: url(../img/esp/card3.webp);
+}
+
+.flip-card4-front{
+    background-image: url(../img/esp/card4.jpg);
+}
+
+.flip-card5-front{
+    background-image: url(../img/esp/card5.jpg);
+}
+
+.flip-card6-front{
+    background-image: url(../img/esp/card6.jpg);
+}
+
+.flip-card7-front{
+    background-image: url(../img/esp/card7.jpeg);
+}
+
+.flip-card8-front{
+    background-image: url(../img/esp/card8.jpg);
+}
+
+.flip-card9-front{
+    background-image: url(../img/esp/card9.jpg);
+}
+
+.flip-card10-front{
+    background-image: url(../img/esp/card10.jpg);
+}
+
+.flip-card11-front{
+    background-image: url(../img/esp/card11.jpg);
+}
+
+.flip-card12-front{
+    background-image: url(../img/esp/card12.jpg);
+}
+
+
+

@@ -1,0 +1,315 @@
+body{ /* ponemos de fondo una foto */
+    background-image: url("mono.jpg"); 
+}
+
+header { /* color de fondo, ponemos que sea tipo flex, lo centramos y cambiamos el tipo de letra*/
+    background: rgb(62, 123, 158); 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.espacio{ /* le damos un margen */
+    margin-left: auto;
+    margin-right: 1%;
+}
+
+.item{ /* definimos su color de fondo, su tamaño, su margen, lo centramos, cambiamos el tamaño de letra, le ponemos los bordes
+    redondeados y ponemos el texto en negrita */
+    background-color: rgb(62, 123, 158);
+    width: 200px;
+    margin: 9px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 18px;
+    padding: 10px 20px;
+    margin-right: auto;
+    text-decoration:none;
+    color: black;  
+    font-weight: bold;
+}
+
+.item { /* definimos un borde y un ancho, ponemos tipo inline-block y el tiempo que tarde en cambiarse al hover */
+   
+    border: 5px solid rgb(0, 0, 0);
+    width: 70px;
+    display: inline-block;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.item:hover, .item:focus, .item:active{ /* definimos un hover para que se cambien los botones al pasar el cursor y definimos que hara
+    en mi caso un pequeño rebote, cambio de colores y aumento */
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    background-color: rgb(14, 49, 70);
+    color: azure;
+}
+
+main { /* tamaño del main y donde estara */
+    float:left;
+    width: 65%;
+    height: 73%;
+}
+
+aside { /* tamaño del aside y donde estara */
+    float:right;
+    width: 35%;
+    height: 80%;
+}
+
+footer { /* definimos que se quede estatico abajo y su tamaño, tambien cambiamos el colo y ponemso que se alinee su interior en el 
+    medio  a parte de cambiar su tipo de letra */
+    position: fixed;
+    left: 8;
+    bottom: 0;
+    width: 99.2%;
+    height: 10%;
+    background-color: rgb(62, 123, 158);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_foo{ /*definimos el tamaño y un pequeño borde transparente*/
+    border: 12px solid transparent;
+    height: 30px;
+    width: 30px;
+}
+
+.img_foo:hover, .img_foo:focus, .img_foo:active{  /* definimos un hover para que se cambien los botones al pasar el cursor y definimos que hara
+    en mi caso un pequeño rebote, cambio de colores y aumento */
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    background-color: rgb(14, 49, 70);
+    color: azure;
+}
+
+.nft_logo{ /*le ponemos un borde transparente*/
+    border: 5px solid transparent;
+}
+
+nav { /*alineamos*/
+    float:right;
+}
+
+.nft_logo { /*le damos un tamaño*/
+    height: 3%;
+    width: 3%;
+    float: left;
+    margin-left: 1%;
+}
+
+iframe{ /*le damos un tamaño*/
+    width: 99.6%;
+    height: 99.6%;
+}
+
+.slider{ /*le damos un tamaño*/
+    width: 100%;
+}
+
+.slider .slider-v{   /*le damos un tamaño, lo ponemos tipo flex le ponemos una barra para despues poner mas paginas sin que se vean
+    y ocultamos la barra para que solo se vean las demas partes pulsando los botones*/
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+}
+
+.slider .slider-v .slide{ /* ajustamos el tamaño, redondeamos los bordes, lo ponemos tipo flex y lo alineamos al centro todo*/
+    min-width: 100%;
+    width: 100%;
+    height: 390px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    scroll-snap-align: start;
+}
+
+#slide1{ /*cambiamos el color del fondo*/
+    background-color: salmon;
+}
+
+#slide2{ /*cambiamos el color del fondo*/
+    background-color: rgb(114, 234, 250);
+}
+
+#slide3{ /*cambiamos el color del fondo*/
+    background-color: rgb(250, 114, 241);
+}
+
+#slide4{ /*cambiamos el color del fondo*/
+    background-color: rgb(157, 250, 114);
+}
+
+#slide5{ /*cambiamos el color del fondo*/
+    background-color: rgb(241, 250, 114);
+}
+
+.slider .links{ /*tipo flex justificado en el centro*/
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.slider .links a{ /*definimos el tamaño de los botones su color de fondo y  de letra lo ponemos tipo flex y lo centramos todo a parte 
+    de poner que sean redondos*/
+    width: 40px;
+    height: 40px;
+    background-color: #2e2e2e;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.slider .links a:hover{ /*al pasar el raton cambiara de color*/
+    background-color: #226bbe;
+}
+
+p{ /*le ponemos un borde transparente y ponemos que sea negrita*/
+    border: 15px solid transparent;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.slide img{ /*ajustamos el tamaño de la imagen*/
+    width: 100%;
+    height: 100%;
+}
+
+.flip-container { /*ponemos que el fondo sea transparente, definimos su tamaño y un borde*/
+    background-color: transparent;
+    width: 412px;
+    height: 410px;
+    border: 3px solid transparent;
+    perspective: 1000px; 
+  }
+
+  .card { /*definimos su tamaño y posicion, alineamos el texto al centro y definimos el tiempo de transicion para que de la vuelta*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-container:hover .card { /*definimos el efecto*/
+    transform: rotateY(180deg);
+  }
+ 
+  .front, .backa  { /*definimos la posicion y tamaño, ponemos tipo flex y lo centramos ademas de cambiar el tamaño de texto*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+  }
+
+  .front, .backm  { /*definimos la posicion y tamaño, ponemos tipo flex y lo centramos ademas de cambiar el tamaño de texto*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+  }
+
+  .front, .backb  { /*definimos la posicion y tamaño, ponemos tipo flex y lo centramos ademas de cambiar el tamaño de texto*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+  }
+
+  .front { /*cambiamos el color de fondo y letra*/
+    background-color: #ff000000;
+    color: #fff;
+    border-radius: 10%;
+    
+  }
+
+  .backa{ /*definimos el color de fondo y de letra y la animacion*/
+    background-color: #2748de;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10%;  
+  }
+
+  .backm{ /*definimos el color de fondo y de letra y la animacion*/
+    background-color: #f16a52;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10%;  
+  }
+
+  .backb{ /*definimos el color de fondo y de letra y la animacion*/
+    background-color: #e0b94c;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10%;  
+  }
+
+  .pba{ /*definimos el tamaño de letra y del .pba, ponemos que el texto baje segun llega a los limites y un borde*/
+    font-size: medium;
+    width: 412px;
+    height: 410px;
+    word-wrap: break-word;
+    border: 12px solid transparent;
+  }
+
+  .apecoin{ /*asignamos un tamaño*/
+      height: 50%;
+      width: 50%;
+  }
+
+  .bitcoinn { /*asignamos un tamaño y borde a las esquinas*/
+    height: 35%;
+    width: 80%;
+    border-radius: 5%;
+  }
+
+  .decentraland{ /*asignamos un tamaño y borde a las esquinas*/
+    height: 50%;
+    width: 80%;
+    border-radius: 5%;
+  }
+
+  .ejemplos{ /*ajustamos el tamaño*/
+      height: 100%;
+      width: 100%;
+      border-radius: 10%;
+  }
+  

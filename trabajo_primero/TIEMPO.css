@@ -1,0 +1,67 @@
+body { /*tipo de letra*/
+    font-family: Arial, Helvetica, sans-serif; 
+  }
+
+  .weather-container { /*definimos el color de letra y fondo, su tamaño, tamaño de letra y el radio del borde*/
+    color: white;
+    font-size: 18px;
+    width: 97%;
+    height: 90%;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50px;
+  }
+  
+  .weather-container .current { /*definimos el color de fondo que sera un degradado, el tamaño, y el radio del borde*/
+    background: rgb(30, 107, 221);
+    background: linear-gradient(
+      0deg,
+      rgba(30, 107, 221, 1) 0%,
+      rgba(3, 116, 255, 1) 42%,
+      rgba(3, 191, 255, 1) 100%
+    );
+    border-radius: 40px;
+    padding: 40px;
+    height: 80%;
+  }
+
+  .weather-container .current .city { /*alineamos el texto al centro, lo ponemos en negrita, le damos tamaña al texto y ponemos margen*/
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .weather-container .current .day { /*alineamos al centro*/
+    text-align: center;
+  }
+  
+  .weather-container .current .row { /*ponemos tipo flex y alinemos al centro*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .weather-container .current .row .info .temperature .temperature-now { /*definimos el tamaño y margen del texto*/
+    font-size: 80px;
+    margin: 0;
+  }
+
+
+  .weather-container .current .more { /*ponemos tipo flex, definimos un margen y alinemos al centro*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 10px;
+    text-align: center;
+  }
+
+
+  .weather-container .current .more .item .text { /*ponemos negrita el texto*/
+    font-weight: bold;
+  }
+
+  .weather-container .current .more .item .text .type { /*definimos el tamaño de letra y su color*/
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+  }

@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Widget</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="TIEMPO.css" />
+  </head>
+  <body>
+    <div class="weather-container"> <!-- definimos div para editar posteriormente en el css -->
+      <div class="current">
+        <div class="city">Sevilla</div> 
+        <div class="day">Ahora</div>
+        <div class="row">
+          <div class="icon">
+            <img src="cloudy.png" alt="" width="128" /> <!-- insertamos foto -->
+          </div>
+          <div class="info">
+            <div class="temperature">
+              <span class="temperature-now">20°</span>
+              <span class="temperature-low">/17°</span>
+            </div>
+            <div class="status">Nublado</div>
+          </div>
+        </div>
+        <div class="more">
+          <div class="item">
+            <div class="icon">
+              <span class="material-icons"> air </span> <!-- span que nos ponga el icono deseado -->
+            </div>
+            <div class="text">
+              <div class="value">9 Km/h</div>
+              <div class="type">Viento</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="icon">
+              <span class="material-icons"> water_drop </span> <!-- span que nos ponga el icono deseado -->
+            </div>
+            <div class="text">
+              <div class="value">93%</div>
+              <div class="type">Probabilidad De Lluvia</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="icon">
+              <span class="material-icons"> water </span> <!-- span que nos ponga el icono deseado -->
+            </div>
+            <div class="text">
+              <div class="value">31%</div>
+              <div class="type">Humedad</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

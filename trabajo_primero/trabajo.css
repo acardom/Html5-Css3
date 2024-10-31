@@ -1,0 +1,130 @@
+body{ /* ponemos de fondo una foto */
+    background-image: url("mono.jpg");
+}
+
+header { /* color de fondo, ponemos que sea tipo flex, lo centramos y cambiamos el tipo de letra*/
+    background: rgb(62, 123, 158);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.espacio{ /* le damos un margen */
+    margin-left: auto;
+    margin-right: 1%;
+}
+
+.item{ /* definimos su color de fondo, su tamaño, su margen, lo centramos, cambiamos el tamaño de letra, le ponemos los bordes
+    redondeados y ponemos el texto en negrita */
+    background-color: rgb(62, 123, 158);
+    width: 200px;
+    margin: 9px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 18px;
+    padding: 10px 20px;
+    margin-right: auto;
+    text-decoration:none;
+    color: black;  
+    font-weight: bold;
+}
+
+.item { /* definimos un borde y un ancho, ponemos tipo inline-block y el tiempo que tarde en cambiarse al hover */
+   
+    border: 5px solid rgb(0, 0, 0);
+    width: 70px;
+    display: inline-block;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.item:hover, .item:focus, .item:active{ /* definimos un hover para que se cambien los botones al pasar el cursor y definimos que hara
+    en mi caso un pequeño rebote, cambio de colores y aumento */
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    background-color: rgb(14, 49, 70);
+    color: azure;
+}
+
+main { /* tamaño del main y donde estara */
+    background: rgba(62, 123, 158, 0.884);
+    float:left;
+    width: 70%;
+    height: 68%;
+    border: 15px solid transparent;
+}
+
+aside { /* tamaño del aside y donde estara */  
+    float:right;
+    width: 25%;
+    height: 80%;
+}
+
+footer { /* definimos que se quede estatico abajo y su tamaño, tambien cambiamos el colo y ponemso que se alinee su interior en el 
+    medio  a parte de cambiar su tipo de letra */
+    position: fixed;
+    left: 8;
+    bottom: 0;
+    width: 99.2%;
+    background-color: rgb(62, 123, 158);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+
+.img_foo{ /*definimos el tamaño y un pequeño borde transparente*/
+    border: 12px solid transparent;
+    height: 30px;
+    width: 30px;
+}
+
+.img_foo:hover, .img_foo:focus, .img_foo:active{ /* definimos un hover para que se cambien los botones al pasar el cursor y definimos que hara
+    en mi caso un pequeño rebote, cambio de colores y aumento */
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    background-color: rgb(14, 49, 70);
+    color: azure;
+}
+
+.nft_logo{ /*le ponemos un borde transparente*/
+    border: 5px solid transparent;
+}
+
+form { /* le damos un tamaño y ponemos los bordes curvos le damos un margen y un color*/
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 10px 20px;
+    background: #665ef5e7;
+    border-radius: 18px;
+    width: 80%;
+    height: 87%;
+}
+  
+nav { /*alineamos*/
+    float:right;
+}
+
+img { /*le damos un tamaño*/
+    height: 3%;
+    width: 3%;
+    float: left;
+    margin-left: 1%;
+}
+
+.imginicio{
+    height: 75%;
+    width: 70%;
+    align-self: center;
+}

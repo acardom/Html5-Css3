@@ -1,0 +1,138 @@
+@media (max-width: 1630px) {
+    .row {
+        flex-direction: column;
+        padding-top: 20%;
+    }
+    .col {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .col2 {
+        align-items: center;
+        padding-bottom: 10%;
+    }
+
+    .col3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .todo{
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 60px;
+    }
+
+    .card_equipo{
+        width: 250px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 20%;
+    }
+
+    .card_equipo .content_equipo {
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .card{
+        width: 250px;
+    }
+
+    .card_info h1{
+        font-size: 40px;
+    }
+
+    .reglas h1{
+        font-size: 40px;
+    }
+
+    .sobre_nosotros h1{
+        font-size: 40px;
+    }
+
+    .equipo h1{
+        font-size: 40px;
+    }
+
+    .contacto h1{
+        font-size: 40px;
+    }
+
+    .flip-card{
+        width: 250px;
+    }
+
+
+}
+
+@media (max-width: 1500px) {
+    .cartas_giratorias{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .amplio_navbar ul li{
+        display: none;
+    }
+
+    .dropdown{
+        display: inline-block
+    }
+}
+
+@media (max-width: 900px) {
+    .col3 ul li{
+        width: 150px;
+    }
+
+    .col3 ul li a{
+        font-size: 20px;
+    }
+
+    .col3 ul li:hover a{
+
+        font-size: 20px;
+    }
+
+    .col3 ul li:hover{
+        transform: translateX(-20px);
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .tabla{
+        
+        font-size: 10px;
+    }   
+
+    td, th {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 750px) {
+    .tabla{
+        
+        font-size: 10px;
+    }   
+
+    td, th {
+        padding: 0;
+        font-size: 8px;
+    }
+}

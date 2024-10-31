@@ -1,0 +1,70 @@
+body{
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/egi/background.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card1{
+  background-image: url(../img/egi/piramides_cairo.png);
+}
+.card2{
+  background-image: url(../img/egi/estatas_asuan.jpg);
+}
+.card3{
+  background-image: url(../img/egi/estatuas_luxor.jpg);
+}
+.card4{
+  background-image: url(../img/egi/castillo_alejandria.jpg);
+}
+
+.flip-card1-front{
+  background-image: url(../img/egi/card1.jpeg);
+}
+
+.flip-card2-front{
+  background-image: url(../img/egi/card2.jpg);
+}
+
+.flip-card3-front{
+  background-image: url(../img/egi/card3.jpg);
+}
+
+.flip-card4-front{
+  background-image: url(../img/egi/card4.jpg);
+}
+
+.flip-card5-front{
+  background-image: url(../img/egi/card5.jpg);
+}
+
+.flip-card6-front{
+  background-image: url(../img/egi/card6.jpg);
+}
+
+.flip-card7-front{
+  background-image: url(../img/egi/card7.jpg);
+}
+
+.flip-card8-front{
+  background-image: url(../img/egi/card8.jpg);
+}
+
+.flip-card9-front{
+  background-image: url(../img/egi/card9.jpg);
+}
+
+.flip-card10-front{
+  background-image: url(../img/egi/card10.webp);
+}
+
+.flip-card11-front{
+  background-image: url(../img/egi/card11.jpg);
+}
+
+.flip-card12-front{
+  background-image: url(../img/egi/card12.webp);
+}
+
+
+
