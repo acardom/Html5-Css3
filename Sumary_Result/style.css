@@ -1,0 +1,159 @@
+@media (min-width: 900px) {
+  body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 40px;
+  font: 150% sans-serif;
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    margin: auto;
+    width: 400PX;
+    height: 1000px;
+  }
+}
+
+.result {
+  padding-top: 4%;
+  background: linear-gradient(rgb(114, 114, 250), rgb(61, 7, 255));
+  width: 50%;
+  border-radius: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+@media (max-width: 900px) {
+  .result {
+    width: 100%;
+    padding-bottom: 15%;
+  }
+}
+.result h1 {
+  color: rgb(224, 224, 224);
+}
+.result h2 {
+  color: white;
+}
+.result p {
+  color: rgb(224, 224, 224);
+  width: 80%;
+  margin: auto;
+}
+.result .result_number {
+  background: linear-gradient(rgb(61, 7, 255), rgb(114, 114, 250));
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  margin: auto;
+}
+.result .result_number .center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.result .result_number h1 {
+  color: white;
+  font-size: 300%;
+}
+.result .result_number p {
+  color: rgb(168, 168, 168);
+  margin-top: -30px;
+}
+
+.sumary {
+  padding-left: 5%;
+  padding-top: 4%;
+}
+.sumary .rojo {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.sumary .rojo p {
+  color: red;
+}
+.sumary .verde {
+  background-color: rgba(0, 128, 0, 0.2);
+}
+.sumary .verde p {
+  color: green;
+}
+.sumary .azul {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+.sumary .azul p {
+  color: blue;
+}
+.sumary .amarillo {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+.sumary .amarillo p {
+  color: rgb(185, 185, 1);
+}
+.sumary .sum {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-top: 5%;
+  width: 320px;
+  height: 50px;
+}
+@media (max-width: 900px) {
+  .sumary .sum {
+    width: 350px;
+  }
+}
+.sumary .sum svg {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+.sumary .sum .push {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.sumary .sum .push p {
+  font-weight: bold;
+  color: black;
+}
+.sumary .sum .push .gris {
+  color: rgb(168, 168, 168);
+}
+
+button {
+  margin-top: 10%;
+  background-color: rgb(64, 29, 146);
+  width: 100%;
+  height: 10%;
+  border-radius: 40px;
+  border-color: rgb(64, 29, 146);
+  font-weight: bold;
+  color: white;
+  font-size: 900;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  button {
+    width: 350px;
+  }
+}
+
+button:hover {
+  background-color: rgb(105, 59, 211);
+}
+
+/*# sourceMappingURL=style.css.map */

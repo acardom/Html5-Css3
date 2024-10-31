@@ -1,0 +1,178 @@
+@import 'variables';
+
+body{
+    @media (min-width: 900px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.container{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+    font: 150% sans-serif;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+    margin: auto;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        margin: auto;
+        width: 400PX;
+        height: 1000px;
+    }
+}
+
+.result{
+    padding-top: 4%;
+    background: linear-gradient(rgb(114, 114, 250), rgb(61, 7, 255));
+    width: 50%;
+    border-radius: 40px;
+    text-align: center;
+    font-weight: bold;
+
+    @media (max-width: 900px) {
+        width: 100%;
+        padding-bottom: 15%;
+    }
+    
+    h1{
+        color: rgb(224, 224, 224);
+    }
+
+    h2{
+        color: white;
+    }
+
+    p{
+        color: rgb(224, 224, 224);
+        width: 80%;
+        margin: auto;
+    }
+
+    .result_number{
+        background: linear-gradient(rgb(61, 7, 255), rgb(114, 114, 250));
+        border-radius: 50%;
+        width: 170px;
+        height: 170px;
+        margin: auto;
+
+        .center{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1{
+            color: white;
+            font-size: 300%;
+        }
+
+        p{
+            color: $color_letra_secundaria;
+            margin-top: -30px;
+        }
+    }
+}
+
+.sumary{
+
+    padding-left: 5%;
+    padding-top: 4%;
+
+    .rojo{
+        background-color: rgba(255, 0, 0, 0.2);
+
+        p{
+            color: red;
+        }
+
+    }
+
+    .verde{
+        background-color: rgba(0, 128, 0, 0.2);
+
+        p{
+            color: green;
+        }
+    }
+
+    .azul{
+        background-color: rgba(0, 0, 255, 0.2);
+
+        p{
+            color: blue;
+        }
+    }
+
+    .amarillo{
+        background-color: rgba(255, 255, 0, 0.2);
+
+        p{
+            color: rgb(185, 185, 1);
+        }
+    }
+
+    .sum{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 500;
+        border-radius: 10px;
+        margin-top: 5%;
+        width: 320px;
+        height: 50px;
+
+        @media (max-width: 900px) {
+            width: 350px;
+        }
+        
+
+        svg{
+            margin-left: 15px;
+            margin-right: 10px;
+        }
+    
+        .push{
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: 20px;
+
+            p{
+                font-weight: bold;
+                color: black;
+            }
+
+            .gris{
+                color: $color_letra_secundaria;
+            }
+        }
+    }
+}
+
+button{
+    margin-top: 10%;
+    background-color: rgb(64, 29, 146);
+    width: 100%;
+    height: 10%;
+    border-radius: 40px;
+    border-color: rgb(64, 29, 146);
+    font-weight: bold;
+    color: white;
+    font-size: 900;
+    cursor: pointer;
+
+    @media (max-width: 900px) {
+        width: 350px;
+    }
+}
+
+button:hover{
+    background-color: rgb(105, 59, 211);
+}

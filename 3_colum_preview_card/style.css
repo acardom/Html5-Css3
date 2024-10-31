@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  border-radius: 30px;
+  font: 100% sans-serif;
+}
+@media (min-width: 1300px) {
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container .card {
+  width: 300px;
+  height: 400px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.container .card h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 20px;
+}
+.container .card p {
+  color: white;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.container .card button {
+  background-color: white;
+  border-color: transparent;
+  font-size: 15px;
+  height: 40px;
+  width: 150px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-top: auto;
+  cursor: pointer;
+}
+.container .card button:hover {
+  background-color: rgb(204, 203, 203);
+}
+.container .first {
+  background-color: rgb(1, 68, 66);
+}
+@media (min-width: 1300px) {
+  .container .first {
+    border-radius: 15px 0 0 15px;
+  }
+}
+@media (max-width: 1300px) {
+  .container .first {
+    border-radius: 15px 15px 0 0;
+  }
+}
+.container .first button {
+  color: rgb(1, 68, 66);
+}
+.container .second {
+  background-color: rgb(216, 142, 4);
+}
+.container .second button {
+  color: rgb(216, 142, 4);
+}
+.container .third {
+  background-color: rgb(3, 129, 146);
+}
+@media (min-width: 1300px) {
+  .container .third {
+    border-radius: 0 15px 15px 0;
+  }
+}
+@media (max-width: 1300px) {
+  .container .third {
+    border-radius: 0 0 15px 15px;
+  }
+}
+.container .third button {
+  color: rgb(3, 129, 146);
+}
+
+/*# sourceMappingURL=style.css.map */

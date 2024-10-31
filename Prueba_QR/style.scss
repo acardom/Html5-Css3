@@ -1,0 +1,45 @@
+@import 'variables';
+
+
+body{
+    background-color: $color_fondo_body;
+    
+
+    .container{
+        background-color: $color_fondo;
+        width: 250px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        margin-top: 5%;
+
+        
+
+        .qr{
+            background-image: url(images/image-qr-code.png);
+            background-size: 250px 250px;
+            background-repeat: no-repeat;
+            margin: auto;
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+        }
+
+        .text{
+            
+            h1{
+                color: $color_letra;
+            }
+
+            p{
+                color: $color_letra_secundaria;
+                font-weight: bold;
+            }
+        }
+    }
+
+}
+
+
+

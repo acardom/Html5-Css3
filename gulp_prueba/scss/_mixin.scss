@@ -1,0 +1,47 @@
+@import 'variables';
+
+@mixin flex ($tipo: column) {
+    display: flex;
+    flex-direction: $tipo;
+}
+
+@mixin estructura_elementos_main () {
+    box-shadow: 5px 5px 15px rgb(172, 171, 171);
+    margin-top: 50px;
+    margin-left: 130px;
+    margin-right: 130px;
+    border-radius: 30px;
+    height: 600px;
+
+    padding-right: 50px;
+    padding-left: 50px;
+
+    @include flex ($tipo: row);
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin encabezados ($size: 30px) {
+    font-weight: bold;
+    font-size: $size;
+}
+
+@mixin parrafos ($size: 15px, $color: gray) {
+    color: $color;
+    font-weight: bold;
+    font-size: $size;
+}
+
+@mixin boton ($color: $boton_fondo) {
+    padding: 20px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    font-size: 14px;
+    background: $color;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
